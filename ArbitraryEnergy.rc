@@ -1,0 +1,493 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#include ""res\\ArbitraryEnergy.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#include ""afxprint.rc""    // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_TOOL DIALOGEX 0, 0, 1275, 134
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Tool"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB,"SysTabControl32",0x0,7,1,184,13
+    LTEXT           "Display",IDC_STATIC,176,7,24,8,NOT WS_VISIBLE
+    CONTROL         "Coordinate axes.",IDC_CHECK_DISPLAY_COORDINATE_AXES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,16,71,10
+    CONTROL         "Half of the reactor.",IDC_CHECK_DISPLAY_HALF_OF_THE_REACTOR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,83,16,78,10
+    CONTROL         "None electric filed",IDC_RADIO_DISPLAY_ELECTRIC_FIELD_NONE,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,7,25,73,10
+    CONTROL         "Whole electric field",IDC_RADIO_DISPLAY_ELECTRIC_FIELD_WHOLE,
+                    "Button",BS_AUTORADIOBUTTON,82,25,76,10
+    CONTROL         "",IDC_STATIC_DISPLAY_RAINBOW_VALUE,"Static",SS_BLACKFRAME,8,35,187,8
+    EDITTEXT        IDC_EDIT_DISPLAY_MIN,14,44,57,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_DISPLAY_MIDDLE,74,44,57,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_DISPLAY_MAX,134,44,57,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_DISPLAY_UINT,136,59,57,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Electret electric field ",IDC_RADIO_DISPLAY_ELECTRIC_FIELD_ELECTRET,
+                    "Button",BS_AUTORADIOBUTTON,7,62,77,10
+    CONTROL         "Electret  electric field by positive electricity only",IDC_RADIO_DISPLAY_ELECTRIC_FIELD_ELECTRET_BY_POSITIVE_ELECTRICITY_ONLY,
+                    "Button",BS_AUTORADIOBUTTON,7,71,167,10
+    CONTROL         "Electret  electric field by negative electricity only",IDC_RADIO_DISPLAY_ELECTRIC_FIELD_ELECTRET_BY_NEGATIVE_ELECTRICITY_ONLY,
+                    "Button",BS_AUTORADIOBUTTON,7,80,171,10
+    CONTROL         "Electric field by  electron on the kettle inwall",IDC_RADIO_DISPLAY_ELECTRIC_FIELD_ELECTRON_ON_THE_KETTLE_INWALL,
+                    "Button",BS_AUTORADIOBUTTON,7,89,156,10
+    CONTROL         "Electric field by  nucleus escaped on the kettle inwall",IDC_RADIO_DISPLAY_ELECTRIC_FIELD_NUCLEUS_ESCAPED_ON_THE_KETTLE_INWALL,
+                    "Button",BS_AUTORADIOBUTTON,7,99,183,10
+    CONTROL         "Electric field by  nucleus in the kettle",IDC_RADIO_DISPLAY_ELECTRIC_FIELD_NUCLEUS_IN_THE_KETTLE,
+                    "Button",BS_AUTORADIOBUTTON,7,108,132,10
+    CONTROL         "Fuel temperature",IDC_RADIO_DISPLAY_FUEL_TEMPERATURE,
+                    "Button",BS_AUTORADIOBUTTON,7,117,71,10
+    CONTROL         "Particle density",IDC_RADIO_DISPLAY_PARTICLE_DENSITY,
+                    "Button",BS_AUTORADIOBUTTON,78,117,65,10
+    CONTROL         "Lawson ",IDC_RADIO_DISPLAY_LAWSON,"Button",BS_AUTORADIOBUTTON,147,118,42,10
+    LTEXT           "Electret",IDC_STATIC,374,7,26,8,NOT WS_VISIBLE
+    LTEXT           "Charge density (C/m^2)",IDC_STATIC_ELECTRET_CHARGE_DENSITY,241,25,79,8
+    CONTROL         "",IDC_SLIDER_ELECTRET_CHARGE_DENSITY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,202,34,151,12
+    EDITTEXT        IDC_EDIT_ELECTRET_CHARGE_DENSITY,355,33,40,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SLIDER_ELECTRET_THICKNESS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,202,72,151,12
+    LTEXT           "Thickness(m)",IDC_STATIC_ELECTRET_THICKNESS,261,65,42,8
+    EDITTEXT        IDC_EDIT_ELECTRET_THICKNESS,354,72,40,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Kettle",IDC_STATIC,580,7,20,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_SLIDER_KETTLE_OUTER_DIAMETER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,399,27,151,12
+    LTEXT           "Outer diameter(m)",IDC_STATIC_KETTLE_OUTER_DIAMETER,458,19,60,8
+    EDITTEXT        IDC_EDIT_KETTLE_OUTER_DIAMETER,551,27,40,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SLIDER_KETTLE_THICKNESS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,399,53,151,12
+    LTEXT           "Thickness(mm)",IDC_STATIC_KETTLE_THICKNESS,458,45,48,8
+    EDITTEXT        IDC_EDIT_KETTLE_THICKNESS,551,53,40,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SLIDER_KETTLE_AVERAGE_RELATIVE_DIELECTRIC_CONSTANT,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,400,82,151,12
+    LTEXT           "Average relative dielectric constant",IDC_STATIC_KETTLE_AVERAGE_RELATIVE_DIELECTRIC_CONSTANT,418,71,114,8
+    EDITTEXT        IDC_EDIT_KETTLE_AVERAGE_RELATIVE_DIELECTRIC_CONSTANT,552,82,40,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Fuel",IDC_STATIC,786,7,14,8,NOT WS_VISIBLE
+    CONTROL         "Deuterium && tritium",IDC_RADIO_FUEL_DEUTERIUM_AND_TRITIUM,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,601,26,77,10
+    CONTROL         "",IDC_SLIDER_FUEL_TOTAL_MASS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,601,45,151,12
+    LTEXT           "Total Mass (g)",IDC_STATIC_FUEL_TOTAL_MASS,659,38,46,8
+    EDITTEXT        IDC_EDIT_FUEL_TOTAL_MASS,753,45,40,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Equivalent of coal(ton)",IDC_STATIC_FUEL_EQUIVALENT_OF_COAL,603,63,74,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_FUEL_EQUIVALENT_OF_COAL,681,62,49,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SLIDER_FUEL_TEMPERATURE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,600,100,151,12
+    LTEXT           "Temperature (KeV)",IDC_STATIC_FUEL_TEMPERATURE,658,93,62,8
+    EDITTEXT        IDC_EDIT_FUEL_TEMPERATURE,752,100,40,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Simulate",IDC_STATIC,972,7,28,8,NOT WS_VISIBLE
+    LTEXT           "Time(s)",IDC_STATIC_SIMULATE_TIME,805,16,24,8
+    EDITTEXT        IDC_EDIT_SIMULATE_TIME,831,14,60,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Escaped(%)",IDC_STATIC_SIMULATE_ESCAPE,894,16,40,8
+    EDITTEXT        IDC_EDIT_SIMULATE_ESCAPE,932,14,46,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Center particle density(m^-3)",IDC_STATIC_SIMULATE_CENTER_PARTIDE_DENSITY,803,31,99,8
+    EDITTEXT        IDC_EDIT_SIMULATE_CENTER_PARTIDE_DENSITY,903,27,64,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Center temperature (KeV)",IDC_STATIC_SIMULATE_CENTER_TEMPERATURE,803,45,84,8
+    EDITTEXT        IDC_EDIT_SIMULATE_TEMPERATURE,890,42,62,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Center Lawson (m^-3 s KeV)",IDC_STATIC_SIMULATE_CENTER_LAWSON,803,61,93,8
+    EDITTEXT        IDC_EDIT_SIMULATE_LAWSON,896,58,62,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Lawson criterion 2e21 m^-3 s KeV",IDC_STATIC_SIMULATE_CENTER_LAWSON_CRITERION,802,71,115,8
+    CONTROL         "Pass",IDC_RADIO_SIMULATE_CENTER_LAWSON_CRITERION_PASS,
+                    "Button",BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP,914,72,31,10
+    CONTROL         "Fail",IDC_RADIO_SIMULATE_CENTER_LAWSON_CRITERION_FAIL,
+                    "Button",BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP,943,72,27,10
+    CONTROL         "",IDC_STATIC_SIMULATE_LOG,"Static",SS_BLACKFRAME,800,82,165,31
+    PUSHBUTTON      "Restart",IDC_BUTTON_SIMULATE_RESTART,967,85,33,14
+    LTEXT           "File",IDC_STATIC,1188,7,12,8,NOT WS_VISIBLE
+    PUSHBUTTON      "Save",IDC_BUTTON_FILE_SAVE,1000,15,33,14
+    PUSHBUTTON      "Open",IDC_BUTTON_FILE_OPEN,1082,15,33,14
+    PUSHBUTTON      "Save as",IDC_BUTTON_FILE_SAVE_AS,1042,15,33,14
+    EDITTEXT        IDC_EDIT_DISPLAY_UNIT,229,113,93,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Pause",IDC_BUTTON_SIMULATE_PAUSE,967,99,33,14
+    EDITTEXT        IDC_EDIT_SIMULATE_OUTPUT,800,113,200,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Help",IDC_BUTTON_FILE_HELP,1000,40,33,14
+    PUSHBUTTON      "About",IDC_BUTTON_FILE_ABOUT,1043,41,33,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_TOOL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 1263
+        VERTGUIDE, 200
+        VERTGUIDE, 400
+        VERTGUIDE, 600
+        VERTGUIDE, 800
+        VERTGUIDE, 1000
+        VERTGUIDE, 1200
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 127
+        HORZGUIDE, 15
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 171, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ArbitraryEnergy"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "ArbitraryEnergy, Version 1.0",IDC_STATIC,42,27,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016-2036 \n Zhao Lei <791839392@qq.com>",IDC_STATIC,37,46,127,20
+    DEFPUSHBUTTON   "OK",IDOK,114,69,50,14,WS_GROUP
+    LTEXT           "cmp law,morality; \r\njb  dissolution;",IDC_STATIC,43,7,114,18
+    RTEXT           "By Zhao Lei",IDC_STATIC,42,36,114,8,SS_NOPREFIX
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ArbitraryEnergy.ico"
+IDR_ArbitraryEnergyTYPE ICON                    "res\\ArbitraryEnergyDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ArbitraryEnergy...",   ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "ArbitraryEnergy"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ArbitraryEnergy.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "ArbitraryEnergy.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "ArbitraryEnergy\n\nArbitraryEnergy\nArbitraryEnergy Files (*.ae)\n.ae\nArbitraryEnergy.Document\nArbitraryEnergy.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "ArbitraryEnergy"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_DIRECT    "Print the active document using current options\nQuick Print"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#include "res\ArbitraryEnergy.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#include "afxprint.rc"    // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
